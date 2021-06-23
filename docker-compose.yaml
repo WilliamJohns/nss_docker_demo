@@ -2,12 +2,9 @@ version: "3"
 
 services:
   app:
-    build: ./demo
+    build: .
     ports:
       - 8000:8000
-    volumes:
-      - ./demo/:/src
-
   database:
     image: postgres:13-alpine
     environment:
